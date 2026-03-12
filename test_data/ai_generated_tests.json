@@ -1,0 +1,8 @@
+[
+  {"from_city": "Delhi", "to_city": "Chennai", "type": "positive"},
+  {"from_city": "Mumbai", "to_city": "Bengaluru", "type": "positive"},
+  {"from_city": "Chennai", "to_city": "Mumbai", "type": "positive"},
+  {"from_city": "INVALIDCITY", "to_city": "Mumbai", "type": "negative"},
+  {"from_city": "123ABC", "to_city": "Mumbai", "type": "negative"},
+  {"from_city": "", "to_city": "Mumbai", "type": "negative"}
+]
