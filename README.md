@@ -35,19 +35,19 @@ This framework automates the flight search functionality of the EaseMyTrip mobil
 ## 📂 Project Structure
 
 EasyTripAutomation/
-├── ai/            # AI-generated test case module
-├── config/        # Configuration files
-├── pages/         # Page Object Model classes
-├── reports/       # HTML test reports
-├── screenshots/   # Test screenshots
-│   ├── POM_test/      # Manual/POM test screenshots
-│   └── ai_failures/   # AI-generated failure screenshots
-├── test_data/     # AI test data
-├── tests/         # Test scripts
-├── utils/         # Driver setup & helpers
-├── easemytrip_test.py
-├── test_connection.py
-└── README.md
+├── ai/            # AI-generated test case module  
+├── config/        # Configuration files  
+├── pages/         # Page Object Model classes  
+├── reports/       # HTML test reports  
+├── screenshots/   # Test screenshots  
+│   ├── POM_test/      # Manual/POM test screenshots  
+│   └── ai_failures/   # AI-generated failure screenshots  
+├── test_data/     # AI test data  
+├── tests/         # Test scripts  
+├── utils/         # Driver setup & helpers  
+├── easemytrip_test.py  
+├── test_connection.py  
+└── README.md  
 
 ---
 
@@ -65,41 +65,60 @@ Before running the framework, install:
 
 ## 🚀 How to Run
 
-1. Clone the repository:
+1. Clone the repository:  
 git clone https://github.com/jayanth-maker/easemytrip-appium-automation.git  
 cd easemytrip-appium-automation  
 
-2. Create virtual environment:
+2. Create virtual environment:  
 python -m venv venv  
 source venv/bin/activate  
 
-3. Install dependencies:
+3. Install dependencies:  
 pip install -r requirements.txt  
 
 4. Start Appium server  
 
-5. Run tests:
+5. Run tests:  
 pytest tests/  
 
 ---
 
-## 📸 Screenshots
+## 📸 Test Case Validation Details
 
-### 🔹 POM Test Cases
+### 🔹 POM-Based Test Cases
 
-#### Invalid City Test  
-![Invalid City](screenshots/POM_test/tc6_invalid_city.png)
+The framework includes manually designed test cases using the Page Object Model.
 
-#### Empty Search Test  
-![Empty Search](screenshots/POM_test/tc7_empty_search.png)
+Example scenarios covered:
+
+- Invalid city input validation  
+- Empty search validation  
+- UI interaction and navigation checks  
+
+For each failed test case:
+- Screenshots are captured automatically  
+- Stored in: `screenshots/POM_test/`  
+- Helps in debugging UI and validation issues  
 
 ---
 
-### 🤖 AI Generated Test Failures
+### 🤖 AI-Generated Test Case Failures
 
-Screenshots for failed AI-generated test cases are stored in:
+The project includes an AI module that generates test scenarios dynamically.
 
-screenshots/ai_failures/
+Key details:
+
+- AI-generated test cases are stored in `test_data/`  
+- Failures from AI-generated scenarios are captured in:  
+  `screenshots/ai_failures/`  
+
+These screenshots help identify:
+
+- Unexpected UI behavior  
+- Edge case failures  
+- Input validation issues  
+
+This adds an extra layer of intelligent testing beyond manual test cases.
 
 ---
 
